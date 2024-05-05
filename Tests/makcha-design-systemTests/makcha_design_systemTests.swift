@@ -1,5 +1,5 @@
 import XCTest
-@testable import makcha_design_system
+@testable import MakchaDesignSystem
 
 final class makcha_design_systemTests: XCTestCase {
     func testExample() throws {
