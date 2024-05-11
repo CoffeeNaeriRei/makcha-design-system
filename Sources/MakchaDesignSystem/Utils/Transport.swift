@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 
 public protocol Transportable {}
-extension Transportable {
+
+public extension Transportable {
     var color: Color { .blue }
 }
+
 public enum SubwayType: Transportable {
     case metropolitanRailway(MetropolitanRailway)
 }
