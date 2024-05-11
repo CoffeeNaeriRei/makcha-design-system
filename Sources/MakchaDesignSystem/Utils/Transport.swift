@@ -10,17 +10,29 @@ import SwiftUI
 
 public protocol Transportable {}
 
-public extension Transportable {
-    var color: Color { .blue }
-}
-
 public enum SubwayType: Transportable {
     case metropolitanRailway(MetropolitanRailway)
+    
+    var color: Color {
+        switch self {
+        case .metropolitanRailway(let metropolitanRailway):
+            metropolitanRailway.color
+        }
+    }
 }
 
 public enum BusType: Transportable {
     case seoulBusType(SeoulBusType)
     case gyeonggiBusType(GyeonggiBusType)
+    
+    var color: Color {
+        switch self {
+        case .seoulBusType(let seoulBusType):
+            seoulBusType.color
+        case .gyeonggiBusType(let gyeonggiBusType):
+            gyeonggiBusType.color
+        }
+    }
 }
 
 public enum TransportType {
