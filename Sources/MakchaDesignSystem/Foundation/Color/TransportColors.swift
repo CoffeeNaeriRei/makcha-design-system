@@ -24,9 +24,9 @@ extension MetropolitanRailway {
     var color: Color {
         switch self {
         case .line1:
-            Color("line1", bundle: .module)
+            Color("line1", bundle: Bundle.module)
         case .line2:
-            Color(.line2)
+            Color("line2", bundle: Bundle.module)
         case .line3:
             Color(.line3)
         case .line4:
