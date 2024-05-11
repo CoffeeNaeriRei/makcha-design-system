@@ -13,12 +13,12 @@ extension Transportable {
     var color: Color { .blue }
 }
 public enum SubwayType: Transportable {
-    case metropolitanRailway
+    case metropolitanRailway(MetropolitanRailway)
 }
 
 public enum BusType: Transportable {
-    case seoulBusType
-    case gyeonggiBusType
+    case seoulBusType(SeoulBusType)
+    case gyeonggiBusType(GyeonggiBusType)
 }
 
 public enum TransportType {
