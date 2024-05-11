@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension TransportType {
-    var color: Color {
+    public var color: Color {
         switch self {
         case .subway(let subwayType):
             subwayType.color
@@ -21,7 +21,7 @@ extension TransportType {
     
 
 extension MetropolitanRailway {
-    var color: Color {
+    public var color: Color {
         switch self {
         case .line1:
             Color("line1", bundle: Bundle.module)
@@ -76,7 +76,7 @@ extension MetropolitanRailway {
 }
 
 extension SeoulBusType {
-    var color: Color {
+    public var color: Color {
         switch self {
         case .공항:
             .purple
@@ -101,7 +101,7 @@ extension SeoulBusType {
 }
 
 extension GyeonggiBusType {
-    var color: Color {
+    public var color: Color {
         switch self {
         case .프리미엄:
             .purple
@@ -120,7 +120,7 @@ extension GyeonggiBusType {
 }
 
 public extension Color {
-    static func transport(_ type: TransportType) -> Self {
+    static func transport(_ type: TransportType) -> Color {
         type.color
     }
 }
