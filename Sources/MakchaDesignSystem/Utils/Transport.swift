@@ -12,8 +12,14 @@ public protocol Transportable {}
 extension Transportable {
     var color: Color { .blue }
 }
-public protocol SubwayType: Transportable {}
-public protocol BusType: Transportable {}
+public enum SubwayType: Transportable {
+    case metropolitanRailway
+}
+
+public enum BusType: Transportable {
+    case seoulBusType
+    case gyeonggiBusType
+}
 
 public enum TransportType {
     case subway(SubwayType)
@@ -21,7 +27,7 @@ public enum TransportType {
 }
 
 // MARK: 지하철 구분에 대한 고민이 필요해보임.
-public enum MetropolitanRailway: SubwayType {
+public enum MetropolitanRailway {
     // --- --- //
     case line1
     case line2
@@ -50,7 +56,7 @@ public enum MetropolitanRailway: SubwayType {
     case gtxA
 }
 
-public enum SeoulBusType: BusType {
+public enum SeoulBusType {
     case 공항
     case 광역
     case 간선
@@ -62,7 +68,7 @@ public enum SeoulBusType: BusType {
     case 투어
 }
 
-public enum GyeonggiBusType: BusType {
+public enum GyeonggiBusType {
     case 프리미엄
     case 경기순환
     case 직행좌석
