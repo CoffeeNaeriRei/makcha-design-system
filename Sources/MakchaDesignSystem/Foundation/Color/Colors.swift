@@ -19,6 +19,12 @@ public extension Color {
     }
 }
 
+public extension UIColor {
+    static func cf(_ name: CFColor) -> UIColor {
+        name.uiColor
+    }
+}
+
 public enum CFColor {
     case primaryScale(CFPrimaryScale)
     case shadow(CFShadow)
@@ -41,8 +47,7 @@ public enum CFColor {
             
         }
     }
-    
-    // MARK: Test..
+
     public var uiColor: UIColor {
         switch self {
         case .primaryScale(let cfColor):
