@@ -23,53 +23,53 @@ public extension MetropolitanRailway {
     var color: Color {
         switch self {
         case .line1:
-            Color(.subwaySeoul1)
+            Color("subwaySeoul1", bundle: Bundle.module)
         case .line2:
-            Color(.subwaySeoul2)
+            Color("subwaySeoul2", bundle: Bundle.module)
         case .line3:
-            Color(.subwaySeoul3)
+            Color("subwaySeoul3", bundle: Bundle.module)
         case .line4:
-            Color(.subwaySeoul4)
+            Color("subwaySeoul4", bundle: Bundle.module)
         case .line5:
-            Color(.subwaySeoul5)
+            Color("subwaySeoul5", bundle: Bundle.module)
         case .line6:
-            Color(.subwaySeoul6)
+            Color("subwaySeoul6", bundle: Bundle.module)
         case .line7:
-            Color(.subwaySeoul7)
+            Color("subwaySeoul7", bundle: Bundle.module)
         case .line8:
-            Color(.subwaySeoul8)
+            Color("subwaySeoul8", bundle: Bundle.module)
         case .line9:
-            Color(.subwaySeoul9)
+            Color("subwaySeoul9", bundle: Bundle.module)
         case .공항철도:
-            Color(.subwaySeoul10)
+            Color("subwaySeoul10", bundle: Bundle.module)
         case .신분당선:
-            Color(.subwaySeoul11)
+            Color("subwaySeoul11", bundle: Bundle.module)
         case .수인분당선:
-            Color(.subwaySeoul12)
+            Color("subwaySeoul12", bundle: Bundle.module)
         case .경강선:
-            Color(.subwaySeoul13)
+            Color("subwaySeoul13", bundle: Bundle.module)
         case .경의중앙선:
-            Color(.subwaySeoul14)
+            Color("subwaySeoul14", bundle: Bundle.module)
         case .경춘선:
-            Color(.subwaySeoul15)
+            Color("subwaySeoul15", bundle: Bundle.module)
         case .서해선:
-            Color(.subwaySeoul16)
+            Color("subwaySeoul16", bundle: Bundle.module)
         case .인천1호선:
-            Color(.subwaySeoul17)
+            Color("subwaySeoul17", bundle: Bundle.module)
         case .인천2호선:
-            Color(.subwaySeoul18)
+            Color("subwaySeoul18", bundle: Bundle.module)
         case .신림선:
-            Color(.subwaySeoul19)
+            Color("subwaySeoul19", bundle: Bundle.module)
         case .우이신설선:
-            Color(.subwaySeoul20)
+            Color("subwaySeoul20", bundle: Bundle.module)
         case .김포골드라인:
-            Color(.subwaySeoul21)
+            Color("subwaySeoul21", bundle: Bundle.module)
         case .용인에버라인:
-            Color(.subwaySeoul22)
+            Color("subwaySeoul22", bundle: Bundle.module)
         case .의정부경전철:
-            Color(.subwaySeoul23)
+            Color("subwaySeoul23", bundle: Bundle.module)
         case .gtxA:
-            Color(.subwaySeoul24)
+            Color("subwaySeoul24", bundle: Bundle.module)
         }
     }
 }
