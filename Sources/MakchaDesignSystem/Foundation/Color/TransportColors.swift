@@ -78,23 +78,23 @@ public extension SeoulBusType {
     var color: Color {
         switch self {
         case .공항:
-            .purple
+            Color("busSeoul1", bundle: Bundle.module)
         case .광역:
-            .purple
+            Color("busSeoul2", bundle: Bundle.module)
         case .간선:
-            .purple
+            Color("busSeoul3", bundle: Bundle.module)
         case .지선:
-            .purple
+            Color("busSeoul4", bundle: Bundle.module)
         case .맞춤:
-            .purple
+            Color("busSeoul5", bundle: Bundle.module)
         case .순환:
-            .purple
+            Color("busSeoul6", bundle: Bundle.module)
         case .심야:
-            .purple
+            Color("busSeoul7", bundle: Bundle.module)
         case .마을:
-            .purple
+            Color("busSeoul8", bundle: Bundle.module)
         case .투어:
-            .purple
+            Color("busSeoul9", bundle: Bundle.module)
         }
     }
 }
@@ -103,17 +103,17 @@ public extension GyeonggiBusType {
     var color: Color {
         switch self {
         case .프리미엄:
-            .purple
+            Color("busGyeonggi1", bundle: Bundle.module)
         case .경기순환:
-            .purple
+            Color("busGyeonggi2", bundle: Bundle.module)
         case .직행좌석:
-            .purple
+            Color("busGyeonggi3", bundle: Bundle.module)
         case .좌석:
-            .purple
+            Color("busGyeonggi4", bundle: Bundle.module)
         case .일반:
-            .purple
+            Color("busGyeonggi5", bundle: Bundle.module)
         case .마을:
-            .purple
+            Color("busGyeonggi6", bundle: Bundle.module)
         }
     }
 }
