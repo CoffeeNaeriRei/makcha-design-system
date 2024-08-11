@@ -122,8 +122,8 @@ extension NSAttributedString {
         return NSMutableAttributedString(string: text, attributes: attributes)
     }
     
-    public static func repet(_ text: String, size: CGFloat) -> NSMutableAttributedString {
-        let font: UIFont = UIFont(name: "RepetitionScrolling", size: size) ?? .pretendard(.semiBold, size: size)
+    public static func repet(_ text: String, size: CGFloat, alt: Pretendard = .semiBold) -> NSMutableAttributedString {
+        let font: UIFont = UIFont(name: "RepetitionScrolling", size: size) ?? .pretendard(alt, size: size)
         
         let attributes: [NSAttributedString.Key: Any] = [
             .font: font
