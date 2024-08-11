@@ -8,7 +8,7 @@ public struct CoffeeFactoryFont {
     public static func registerFonts() {
         Pretendard.allCases.forEach { registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "otf") }
         registerFont(bundle: .module, fontName: "DungGeunMo", fontExtension: "otf")
-        registerFont(bundle: .module, fontName: "repet___", fontExtension: "ttf")
+        registerFont(bundle: .module, fontName: "RepetitionScrolling", fontExtension: "ttf")
     }
     
     fileprivate static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) {
@@ -17,7 +17,6 @@ public struct CoffeeFactoryFont {
               let font = CGFont(fontDataProvider) else {
             fatalError("Could't create font from filename: \(fontName) with extension \(fontExtension)")
         }
-        print(font)
         var error: Unmanaged<CFError>?
         CTFontManagerRegisterGraphicsFont(font, &error)
     }

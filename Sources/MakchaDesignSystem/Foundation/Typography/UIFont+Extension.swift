@@ -29,7 +29,7 @@ extension UIFont {
     }
     
     public static func repet(size: CGFloat) -> UIFont {
-        UIFont(name: "repet___", size: size) ?? .systemFont(ofSize: 16)
+        UIFont(name: "RepetitionScrolling", size: size) ?? .systemFont(ofSize: 16)
     }
 }
 
@@ -123,7 +123,7 @@ extension NSAttributedString {
     }
     
     public static func repet(_ text: String, size: CGFloat) -> NSMutableAttributedString {
-        let font: UIFont = UIFont(name: "repet___", size: size) ?? .pretendard(.semiBold, size: size)
+        let font: UIFont = UIFont(name: "RepetitionScrolling", size: size) ?? .pretendard(.semiBold, size: size)
         
         let attributes: [NSAttributedString.Key: Any] = [
             .font: font
