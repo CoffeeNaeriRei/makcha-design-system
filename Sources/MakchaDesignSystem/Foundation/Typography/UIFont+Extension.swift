@@ -23,6 +23,10 @@ extension UIFont {
     public static func pretendard(_ weight: Pretendard, size: CGFloat) -> UIFont {
         UIFont(name: weight.rawValue, size: size) ?? .systemFont(ofSize: 16)
     }
+    
+    public static func dunggeummo(size: CGFloat) -> UIFont {
+        UIFont(name: "DungGeunMo", size: size) ?? .systemFont(ofSize: 16)
+    }
 }
 
 extension NSAttributedString {
@@ -96,6 +100,16 @@ extension NSAttributedString {
     ///
     public static func pretendard(_ text: String, weight: Pretendard, size: CGFloat) -> NSMutableAttributedString {
         let font: UIFont = UIFont(name: weight.rawValue, size: size) ?? .systemFont(ofSize: 16)
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font
+        ]
+        
+        return NSMutableAttributedString(string: text, attributes: attributes)
+    }
+    
+    public static func dunggeummo(_ text: String, size: CGFloat) -> NSMutableAttributedString {
+        let font: UIFont = UIFont(name: "DungGeunMo", size: size) ?? .systemFont(ofSize: 16)
         
         let attributes: [NSAttributedString.Key: Any] = [
             .font: font
