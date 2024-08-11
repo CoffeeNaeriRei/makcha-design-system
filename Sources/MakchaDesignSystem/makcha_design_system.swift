@@ -17,6 +17,7 @@ public struct CoffeeFactoryFont {
               let font = CGFont(fontDataProvider) else {
             fatalError("Could't create font from filename: \(fontName) with extension \(fontExtension)")
         }
+        print(font)
         var error: Unmanaged<CFError>?
         CTFontManagerRegisterGraphicsFont(font, &error)
     }
