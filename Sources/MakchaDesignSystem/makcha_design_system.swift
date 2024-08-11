@@ -8,6 +8,7 @@ public struct CoffeeFactoryFont {
     public static func registerFonts() {
         Pretendard.allCases.forEach { registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "otf") }
         registerFont(bundle: .module, fontName: "DungGeunMo", fontExtension: "otf")
+        registerFont(bundle: .module, fontName: "repet___", fontExtension: "ttf")
     }
     
     fileprivate static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) {

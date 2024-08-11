@@ -27,6 +27,10 @@ extension UIFont {
     public static func dunggeummo(size: CGFloat) -> UIFont {
         UIFont(name: "DungGeunMo", size: size) ?? .systemFont(ofSize: 16)
     }
+    
+    public static func repet(size: CGFloat) -> UIFont {
+        UIFont(name: "repet___", size: size) ?? .systemFont(ofSize: 16)
+    }
 }
 
 extension NSAttributedString {
@@ -110,6 +114,16 @@ extension NSAttributedString {
     
     public static func dunggeummo(_ text: String, size: CGFloat) -> NSMutableAttributedString {
         let font: UIFont = UIFont(name: "DungGeunMo", size: size) ?? .systemFont(ofSize: 16)
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: font
+        ]
+        
+        return NSMutableAttributedString(string: text, attributes: attributes)
+    }
+    
+    public static func repet(_ text: String, size: CGFloat) -> NSMutableAttributedString {
+        let font: UIFont = UIFont(name: "repet___", size: size) ?? .pretendard(.semiBold, size: size)
         
         let attributes: [NSAttributedString.Key: Any] = [
             .font: font
